@@ -1,0 +1,19 @@
+<!--pages/addpage/addorupdate.wxml-->
+<!-- addProduct.wxml -->
+<view class="container">
+
+    <form wx:if="{{productId === null }}" bindsubmit="insertOrder">
+      <input model:value="{{productId}}" type="text"  class="input" name="productId" placeholder="productId" />
+        <input model:value="{{productName}}" type="text"   class="input" name="productName" placeholder="productName" />
+        <input model:value="{{productCode}}" type="text" class="input" name="productCode" placeholder="productCode" />
+        <input model:value="{{productType}}" type="text"  class="input" name="productType" placeholder="productType" />
+        <button form-type="submit" >提交</button>
+    </form>
+    <form wx:if="{{productId != null }}" bindsubmit="updateOrder">
+        <input model:value="{{productId}}" type="text"  class="input" name="productId" placeholder="productId" />
+        <input model:value="{{productName}}" type="text"   class="input" name="productName" placeholder="productName" />
+        <input model:value="{{productCode}}" type="text" class="input" name="productCode" placeholder="productCode" />
+        <input model:value="{{productType}}" type="text"  class="input" name="productType" placeholder="productType" />
+        <button form-type="submit" >提交</button>
+    </form>
+</view>

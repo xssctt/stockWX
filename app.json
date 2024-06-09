@@ -1,0 +1,58 @@
+{
+    "pages": [
+        "pages/product/product",
+        "pages/shippers/shippers",
+        "pages/shipments/shipments",
+        "pages/type/type",
+        "pages/addpage/addorupdate",
+        "pages/shipmentaddpage/shipmentaddpage"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ededed",
+        "navigationBarTitleText": "库存进销",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#354667",
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#1296DB",
+        "backgroundColor": "#FAFAFA",
+        "position": "bottom",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/product/product",
+                "text": "product",
+                "iconPath": "icons/category.png",
+                "selectedIconPath": "icons/category-o.png"
+            },
+            {
+                "pagePath": "pages/shippers/shippers",
+                "text": "ship",
+                "iconPath": "icons/cart.png",
+                "selectedIconPath": "icons/cart-o.png"
+            },
+            {
+                "pagePath": "pages/shipments/shipments",
+                "text": "shippers",
+                "iconPath": "icons/my.png",
+                "selectedIconPath": "icons/_my.png"
+            },
+            {
+                "pagePath": "pages/type/type",
+                "text": "shipments",
+                "iconPath": "icons/my.png",
+                "selectedIconPath": "icons/_my.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-tabbar": "@vant/weapp/tabbar/index",
+        "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+    }
+}

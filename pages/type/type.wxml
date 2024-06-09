@@ -1,0 +1,40 @@
+
+<view style="padding-top: 20rpx; padding-bottom: 35rpx;">
+    <view style="padding: 30rpx; background-color: white; font-size: 35rpx;font-weight: bold;">shippers
+      <text  class="btn" bindtap="insertOrder" >新增</text>
+    </view>
+</view>
+<!-- 搜索 -->
+<view class="nx_congar">
+<input class="input" auto-focus="true" bindinput="search" placeholder="请输入名称" />
+</view>
+
+
+<scroll-view scroll-x style="white-space: nowrap; width: 100vw; overflow-x: scroll;">
+  <view style="display: inline-block; white-space: nowrap;">
+
+    <view style="padding: 15rpx 0; border: 1rpx solid #ccc; display: flex; color: #7689Db;">
+      
+        <view style="flex: 5; margin-left: 50rpx; width: 200rpx;">Name</view>
+        <view style="flex: 6; margin-left: 50rpx; width: 100rpx;">content</view>
+     
+        <view style="flex: 4; margin-left: 50rpx; width: 200rpx;">操作</view>
+    </view>
+
+    <view wx:for="{{productList}}" wx:key="productId" style="padding: 0 10px; border: 1px solid #ccc;">
+        <view style="padding: 5rpx 0; display: flex; color: #7689Db;">
+
+      
+        <view style="flex: 5;  margin-left: 50rpx;">{{item.name}}</view>
+        <view style="flex: 6;  margin-left: 50rpx;">{{item.name}}</view>
+       
+        <text  style="flex: 2;  margin-left: 50rpx;"    bindtap="deleteOrder"  data-id="{{item.productId}}" >删除</text>
+        <text  style="flex: 2;  margin-left: 10rpx;" data-id="{{item.productId}}" bindtap="updateOrder">更新</text>
+        </view>
+    </view>
+  </view>
+</scroll-view>
+
+
+
+

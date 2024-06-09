@@ -1,0 +1,12 @@
+{
+	"name": "app",
+	"version": "0.0.1",
+	"description": "miniprogram project",
+	"dependencies": {
+		"@vant/weapp": "^1.11.6",
+		"miniprogram-element": "latest",
+		"miniprogram-render": "latest",
+		"mobx-miniprogram": "^4.13.2",
+		"mobx-miniprogram-bindings": "^1.2.1"
+	}
+}

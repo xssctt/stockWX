@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="form-item">
+    <text class="label">Product ID</text>
+    <input class="input" type="number" bindinput="onInput" data-field="product_id" placeholder="Enter Product ID"/>
+  </view>
+  <view class="form-item">
+    <text class="label">Shipper ID</text>
+    <input class="input" type="number" bindinput="onInput" data-field="shipper_id" placeholder="Enter Shipper ID"/>
+  </view>
+  <view class="form-item">
+    <text class="label">Shipment Date</text>
+    <input class="input" type="date" bindinput="onInput" data-field="shipment_date" placeholder="Enter Shipment Date"/>
+  </view>
+  <view class="form-item">
+    <text class="label">Quantity</text>
+    <input class="input" type="number" bindinput="onInput" data-field="quantity" placeholder="Enter Quantity"/>
+  </view>
+  <view class="form-item">
+    <text class="label">Price</text>
+    <input class="input" type="number" bindinput="onInput" data-field="price" placeholder="Enter Price"/>
+  </view>
+  <view class="form-item">
+    <text class="label">Amount Paid</text>
+    <input class="input" type="number" bindinput="onInput" data-field="amount_paid" placeholder="Enter Amount Paid"/>
+  </view>
+  <view class="form-item">
+    <text class="label">Amount Due</text>
+    <input class="input" type="number" bindinput="onInput" data-field="amount_due" placeholder="Enter Amount Due"/>
+  </view>
+  <view class="form-item">
+    <text class="label">Remarks</text>
+    <textarea class="textarea" bindinput="onInput" data-field="remarks" placeholder="Enter Remarks"></textarea>
+  </view>
+  <button class="submit-btn" bindtap="submitForm">Submit</button>
+</view>

@@ -1,0 +1,18 @@
+/**app.wxss**/
+/*全局 */
+Page,view,text,swiper,swiper-item,image,navigator{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /** 主题  **/
+  Page{
+    --themeColor: #0094ff;  /*主题颜色 */
+    background-color: #eee;  /*背景颜色 */
+    color: #666;              /* 字体颜色*/
+    font-size: 28rpx;           /* 字体大小*/
+  }
+  image{
+    width: 100%;
+  }

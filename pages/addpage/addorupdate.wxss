@@ -1,0 +1,13 @@
+/* pages/addpage/addorupdate.wxss */
+
+
+
+.input{
+    padding: 20rpx;
+    color: #666;
+    font-weight: bold;
+    font-size: 22rpx;
+    background-color: white;
+    border-bottom: 1rpx solid #eee;
+    border-radius: 10rpx 10rpx 0 0;
+  }

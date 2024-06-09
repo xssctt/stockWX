@@ -1,0 +1,14 @@
+{
+	"component": true,
+	"usingComponents": {
+		"TlbsmButton": "components/button/button",
+		"TlbsmNavbar": "components/navbar/navbar",
+		"TlbsmInput": "components/input/input",
+		"TlbsmRadio": "components/radio-group/radio-group",
+		"TlbsmDropdownMenu": "components/dropdown-menu/dropdown-menu",
+		"TlbsmDropdownItem": "components/dropdown-item/dropdown-item",
+		"TlbsmSwiper": "components/swiper/swiper",
+		"custom-component": "./index",
+		"element": "miniprogram-element"
+	}
+}

@@ -1,0 +1,40 @@
+<!--pages/goodsInfo/index.wxml-->
+<view class="nx_detail">
+
+  <view style="padding-top: 20rpx; padding-bottom: 35rpx;">
+      <view style="padding: 30rpx; background-color: white; font-size: 35rpx;font-weight: bold;">product
+        <text  class="btn" bindtap="insertOrder" >新增</text>
+      </view>
+     
+<!-- 搜索 -->
+<view class="nx_congar">
+  <input class="input" auto-focus="true" bindinput="search" placeholder="请输入商品名称" />
+</view>
+<view style="padding: 15rpx 0; border: 1rpx solid #ccc; display: flex; color: #7689Db;">
+        <view style="flex: 5; padding: 1rpx;">id</view>
+        <view style="flex: 5; padding: 1rpx;">productName</view>
+        <view style="flex: 5; padding: 1rpx;">productCode</view>
+        <view style="flex: 5; padding: 1rpx;">productType</view>
+        <view style="flex: 5; padding: 1rpx;">操作</view>
+         </view>
+    <view style="padding: 0 20rpx; background-color: white;" wx:for="{{productList}}" wx:key="productId">
+
+        <view style="padding: 15rpx 0; border: 1rpx solid #ccc; display: flex; color: #7689Db;">
+
+        <view style="flex: 5; padding: 1rpx;">{{item.productId}}</view>
+        <view style="flex: 5; padding: 1rpx;">{{item.productName}}</view>
+        <view style="flex: 5; padding: 1rpx;">{{item.productCode}}</view>
+        <view style="flex: 5; padding: 1rpx;">{{item.productType}}</view>
+        
+        <text  style="flex: 2; padding: 1rpx;"    bindtap="deleteOrder"  data-id="{{item.productId}}" >删除</text>
+        <text  style="flex: 2; padding: 1rpx;" data-id="{{item.productId}}" bindtap="updateOrder">更新</text>
+       </view>
+
+   
+       
+    </view>
+
+  </view>
+
+</view>
+
