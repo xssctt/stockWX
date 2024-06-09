@@ -1,35 +1,26 @@
+<!--pages/addpage/addorupdate.wxml-->
+<!-- addProduct.wxml -->
 <view class="container">
-  <view class="form-item">
-    <text class="label">Product ID</text>
-    <input class="input" type="number" bindinput="onInput" data-field="product_id" placeholder="Enter Product ID"/>
-  </view>
-  <view class="form-item">
-    <text class="label">Shipper ID</text>
-    <input class="input" type="number" bindinput="onInput" data-field="shipper_id" placeholder="Enter Shipper ID"/>
-  </view>
-  <view class="form-item">
-    <text class="label">Shipment Date</text>
-    <input class="input" type="date" bindinput="onInput" data-field="shipment_date" placeholder="Enter Shipment Date"/>
-  </view>
-  <view class="form-item">
-    <text class="label">Quantity</text>
-    <input class="input" type="number" bindinput="onInput" data-field="quantity" placeholder="Enter Quantity"/>
-  </view>
-  <view class="form-item">
-    <text class="label">Price</text>
-    <input class="input" type="number" bindinput="onInput" data-field="price" placeholder="Enter Price"/>
-  </view>
-  <view class="form-item">
-    <text class="label">Amount Paid</text>
-    <input class="input" type="number" bindinput="onInput" data-field="amount_paid" placeholder="Enter Amount Paid"/>
-  </view>
-  <view class="form-item">
-    <text class="label">Amount Due</text>
-    <input class="input" type="number" bindinput="onInput" data-field="amount_due" placeholder="Enter Amount Due"/>
-  </view>
-  <view class="form-item">
-    <text class="label">Remarks</text>
-    <textarea class="textarea" bindinput="onInput" data-field="remarks" placeholder="Enter Remarks"></textarea>
-  </view>
-  <button class="submit-btn" bindtap="submitForm">Submit</button>
+
+<form wx:if="{{shipmentId === '' }}" bindsubmit="insertOrder">
+
+
+    <input model:value="{{productId}}" type="number"   class="input" name="productId" placeholder="productId" />
+
+    <input model:value="{{shipperId}}" type="number" class="input" name="shipperId" placeholder="shipperId" />
+
+    <input model:value="{{quantity}}" type="number"  class="input" name="quantity" placeholder="quantity" />
+
+    <input model:value="{{price}}" type="text"  class="input" name="price" placeholder="price" />
+
+    <input model:value="{{amountPaid}}" type="text"   class="input" name="amountPaid" placeholder="amountPaid" />
+    
+    <input model:value="{{totalAmount}}" type="text"   class="input" name="totalAmount" placeholder="totalAmount" />
+    <input model:value="{{amountDue}}" type="text" class="input" name="amountDue" placeholder="amountDue" />
+
+    <input model:value="{{remarks}}" type="text"  class="input" name="remarks" placeholder="remarks" />
+
+    <button form-type="submit" >提交</button>
+</form>
+
 </view>

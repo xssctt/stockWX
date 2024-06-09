@@ -113,6 +113,9 @@ Page({
     });
 },
     insertOrder: function(e) {
+        let id = null;
+        console.log("dataset"+id)
+          wx.setStorageSync('shipmentaddpage', id);
         wx.navigateTo({
             url: '/pages/shipmentaddpage/shipmentaddpage'
           });
@@ -123,9 +126,9 @@ Page({
     updateOrder: function(e) {
       let id = e.currentTarget.dataset.id;
       console.log("dataset"+id)
-        wx.setStorageSync('updateId', id);
+        wx.setStorageSync('shipmentaddpage', id);
         wx.navigateTo({
-            url: 'pages/shipmentaddpage/shipmentaddpage'
+            url: '/pages/shipmentaddpage/shipmentaddpage'
         });
           
     }
